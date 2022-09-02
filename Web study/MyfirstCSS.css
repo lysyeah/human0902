@@ -1,0 +1,33 @@
+span{
+    background-color: crimson;
+ }
+
+td:hover{background-color: black;}
+
+태그{
+    속성 : 값;
+}
+
+#아이디{
+    속성:값;
+}
+
+.클래스{
+    속성:값;
+}
+
+.abc{
+    background-color: red;
+}
+
+#bgYellow{
+        background-color: yellow;
+}
+
+table {border-collapse: collapse;}
+
+tr{
+    background-color: #e6f1ff;}
+
+tr{ border-top: 8px solid black; border-bottom:2px solid red; }
+

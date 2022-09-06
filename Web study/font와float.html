@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <h1>Lorem</h1>
+    <h3>Ipsum</h3>
+    <Section>
+        <!-- 둥둥 떠다니는 이미지 --> 
+        <img class="floatImg"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7TDawKSGkCLBdg8bQW1b7PDCl4HWRnOl3DQ&usqp=CAU" alt="">
+        <p><Lorem><strong>Lorem ipsum</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugiat modi, dolores quae autem nemo earum commodi id vero eos distinctio cum dignissimos expedita illum ipsum? Deserunt ut libero culpa.</p>
+    </Section>
+
+    <style>
+        .floatImg{
+            float: right; 
+            /* float:none; 디폴트는 none ! */
+        }
+
+        strong{
+            /* font-size: 30px; */
+            /* px(pixel픽셀)은 절대 단위이다!! 픽셀 하나하나는 정해져잇따 */
+            font-size: 3em;
+            /* font-size: 4em;하면 4배가 된다. */
+            font-family: 'Black And White Picture', sans-serif;
+            font-family: 'Nanum Pen Script', cursive;
+        }
+
+        p{font-size: 2em;}
+        /* p{font-size: 2em;}이렇게 하면 4곱하기 2가 돼서 8배가 된다.
+        왜냐하면 strong은 p의 자식이기 때문이다. */
+        
+        img{width : 30%
+            /* width : 1vp */
+        }  
+        /* img{10em}  */
+
+        /* 뷰포트=흰색화면 전체.  */
+
+        /* 폰트바꾸기 https://fonts.google.com/?subset=korean */
+        
+        /*         
+        font-family: 'Black And White Picture', sans-serif;
+        font-family: 'Nanum Pen Script', cursive; */
+        /* 이 두 줄을 요소 안에 {여기} 넣는다. */
+
+        /* <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Nanum+Pen+Script&display=swap" rel="stylesheet"> */
+        /* 이거는 저짝 위에다가 넣어두면 된다. */
+
+    </style>
+
+
+</body>
+</html>

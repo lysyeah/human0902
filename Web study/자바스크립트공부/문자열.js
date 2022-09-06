@@ -15,7 +15,7 @@ var num1 = 123;
 var num2 = "456";
 console.log(num1+num2); 
 //1백2십3이라는 숫자와 사오육이라는 문자열을 합쳐서 일이삼사오륙 이라는 문자열이 되었다.
-console.log(typeof(변수1));
-
+console.log(typeof(num1+num2));
+// number + string 이라서 string으로 결과값이 나온 듯하다.
 
 

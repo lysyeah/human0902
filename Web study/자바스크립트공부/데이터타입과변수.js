@@ -22,8 +22,15 @@ console.log(typeof(변수1))
 
 let num1 = 123;
 let num2 = 45;
-num2 += 4; //num2 = num2 +4;
+num2 += 4; //+= 의 뜻은 다음과 같다. num2 = num2 +4;
+// 보충설명하자면, 45에 4를 더한 값이 num2이다.
 console.log(num2);
+
+num1 =+ 4;
+console.log(num1); // 부호의 순서가 다르다.
+
+
+
 
 let 변수3 = 333;
 let 변수4 = "333";

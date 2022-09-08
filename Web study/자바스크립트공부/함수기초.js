@@ -137,15 +137,15 @@
 // console.log(add(3,5,8))
 
 //출력도 하지 않고 있었고, 리턴도 하지 않고 있었다는 말을 듣고 풀었다.
-function MinusSmallFromBig(a,b){
-    if(a > b){
-      return  a-b
-    }else {
-      return  b-a
-    }
-}
+// function MinusSmallFromBig(a,b){
+//     if(a > b){
+//       return  a-b
+//     }else {
+//       return  b-a
+//     }
+// }
 
-console.log(MinusSmallFromBig(-2,-3));
+// console.log(MinusSmallFromBig(-2,-3));
 
 
 //문제2. 첫 번째 인자 : 문자열, 두 번째 인자 : 숫자
@@ -162,18 +162,18 @@ console.log(MinusSmallFromBig(-2,-3));
 
 //문제3. isOverTen(숫자)는 10보다 크면 true, 이하면 false를 반환하는 함수다.
         //1번에서 만든 함수의 결과값을 인자로 넘겨 "10보다 큽니다","10 이하입니다"를 출력해보세요.
-function isOverTen(숫자){
-    return 숫자>10? true: false;
-}
-let overTen = isOverTen(diffTwoNum(3,9));
+// function isOverTen(숫자){
+//     return 숫자>10? true: false;
+// }
+// let overTen = isOverTen(diffTwoNum(3,9));
 //방법1
 // (overTen==true)? console.log("10보다 큽니다."): console.log("10이하입니다.")
 //방법2
-if(overTen==true){
-    console.log("10보다 큽니다.");
-}else{
-    console.log("10이하 입니다.");
-}
+// if(overTen==true){
+//     console.log("10보다 큽니다.");
+// }else{
+//     console.log("10이하 입니다.");
+// }
 
 
 //문제4. calcFigure(도형 이름, 변의 길이)
@@ -182,3 +182,20 @@ if(overTen==true){
         //정삼강형공식 = 루트3 / 4 * 한변의 제곱
         //루트 구하기 = Math.sqrt(숫자)
     //저 3 개 말고 들어오면 "지원하지 않는 도형입니다."를 출력하기.
+
+// function calcFigure(도형이름, 변의길이){
+//     const PI = 3.141592;
+//     switch(도형이름){
+//         case '삼각형':
+//             return Math.sqrt(3) / 4 * 변의길이;
+//         case '사각형':
+//             return 변의길이*변의길이;
+//         case '원형':
+//             return  PI * 변의길이 * 변의길이 * 0.25;
+//         default: 
+//             console.log("지원하지 않는 도형입니다.");
+//             return; 
+//     }
+// }
+// console.log(calcFigure("사각형",5))
+

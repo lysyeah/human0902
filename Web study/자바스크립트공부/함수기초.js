@@ -1,21 +1,22 @@
 // //정의 : function함수명(인자){본문};
 
-// function printhello(name){
-//     console.log(name+"님 반가워요");
-// }
-// //호출 : 함수명(인자전달);
-// printhello("홍길동");
+function printhello(name){
+    console.log(name+"님 반가워요");
+}
+//호출 : 함수명(인자전달);
 
-// function add(num1,num2){
-//     return num1 + num2;
-// }
-// let result = add(5,23);
 
-// let result2 = add(3,5);
-// let result3 = add(92,5);
-// let result4 = result2 + result3;
-// console.log(result4);
-// //input, output
+
+function add(num1,num2){
+    return num1 + num2;
+}
+let result = add(5,23);
+
+let result2 = add(3,5);
+let result3 = add(92,5);
+let result4 = result2 + result3;
+console.log(result4);
+//input, output
 
 
 //문제1. 3 개의 숫자를 받아서 합을 리턴하는 함수 구해보세요.

@@ -1,32 +1,32 @@
-// function printWhat(what){
-//     console.log(what);
-// }
-// let str2 = "초코우유";
-// printWhat(str2)
+function printWhat(what){
+    console.log(what);
+}
+let str2 = "초코우유";
+printWhat(str2)
 
 
-// matchQuiz("광개토대왕", 정답함수, 오답함수)
-// function 정답함수(){        //콜백함수
-//     console.log("정답입니다.!!")
-// }
-// function 오답함수(){        //콜백함수
-//     console.log("오답입니다.!!")
-// }
+matchQuiz("광개토대왕", 정답함수, 오답함수)
+function 정답함수(){        //콜백함수
+    console.log("정답입니다.!!")
+}
+function 오답함수(){        //콜백함수
+    console.log("오답입니다.!!")
+}
 
 //함수 정의
-// function matchQuiz(answer, printTrue, printFalse){
-//     if(answer=="무령왕릉"){
-//         printTrue();
-//     }else{
-//         printFalse();
-//     }
-// }
+function matchQuiz(answer, printTrue, printFalse){
+    if(answer=="무령왕릉"){
+        printTrue();
+    }else{
+        printFalse();
+    }
+}
 
 //동기 = synchronous : 요청과 결과가 동시에 일어남.
 //비동기 = unsynchronous : 요청과 결과가 동시에 일어나지 않음.
 
 //함수 호출
-// matchQuiz("광개토대왕", 정답함수, 오답함수)
+matchQuiz("광개토대왕", 정답함수, 오답함수)
 
 
 //문제1. isOdd(판단할숫자,짝수일때호출할함수,홀수일때호출할함수)

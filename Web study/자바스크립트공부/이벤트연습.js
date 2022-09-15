@@ -92,8 +92,8 @@ let selectEle = document.querySelector(".rebull > input");
 console.log(selectEle);
 
 
-//문제3. 버튼을 누르면 h3에 "동적으로만든요소"라는 글자를 동적으로 추가하기.
-//콜라 밑에 동적으로 추가하기.
+//문제3. 버튼을 만들어주세요.
+//      클릭할때마다 H3태그에 "동적으로만든요소" 라는 글자를 콜라밑에 동적으로 추가하는 버튼
 let addBtn = document.getElementById("addNewText");
 addBtn.onclick = function(){
     let heading=document.createElement("h3");
@@ -109,31 +109,48 @@ addBtn.onclick = function(){
 let removeBtn = document.getElementById("removeDynamicH3");
 removeBtn.onclick = function(){
     //부모
-    console.log("가져온부모:" + ele);
+    console.log("가져온부모 : "+document.getElementById("cola"));
     //자식
-    let dynamicH3 = ele.querySelectorAll("#cola>h3")
-    console.log(dynamicH3);
-    
-
-
+    let dynamicH3 = document.querySelectorAll("#cola > h3");
+    //제거
     //1번방식
-    for(let j =0;j<dynamicH3.length; j++){
+    for(let i=0; i<dynamicH3.length; i++){
         ele.removeChild(dynamicH3[i]);
     }
-
-    //제거(2번째방법)
-    //dynamicH3.remove(); // 이방법을 바로 하면 안되는 이유: dynamich3는 요소 하나가 아니라 배열이기 때문이다.
-    for(let i =0; i<dynamicH3.length; i++){
-        dynamicH3[i].remove();
-    }
+    
+    //2번방식
+    // for(let i=0; i<dynamicH3.length; i++){
+    //     dynamicH3[i].remove();
+    // }
 }
 
-//문제5.웰치스를 더블클릭할 때마다 웰치스 옆에 1부터9까지의 숫자를 붙여보세요.
-//이벤트를달요소.on이벤트타입 = 콜백함수
-//이벤트를달요소.addEventListener(이벤트타입,콜백함수)
+//퀴즈5. 웰치스를 더블클릭할때마다 웰치스옆에 1부터 9까지의 숫자를 붙여보세요.
+// 이벤트를달요소.on이벤트타입 = 콜백함수
+// 이벤트를달요소.addEventListener(이벤트타입, 콜백함수)
 
 
-
-
-
+console.log(웰치스);
+웰치스.ondblclick = addNums;
+//웰치스.addEventListener("dblclick", addNums);
+function addNums(){
+​
+    //컨텐츠 내용 제작
+    let nums='';
+    for(let i=1; i<=9; i++){
+        nums += i;
+    }
+    
+    //컨텐츠를 span으로 감싸기
+    let newSpan = document.createElement('span');
+    let text = document.createTextNode(nums);
+    newSpan.appendChild(text);
+​
+    //만들어진 span을 웰치스의 형제로 넣기
+    //부모노드.이전위치노드생성(생성대상, 기준위치)
+    웰치스.append(newSpan); //요소내부의 끝에 삽입. "웰치스"글자옆에 새로생긴 숫자를 클릭해도 이벤트가 동작함.
+    //prepend   //요소 내부의 시작에 삽입
+    //after     //요소 뒤에 삽입
+    //before    //요소 앞에 삽입
+}
+​
 

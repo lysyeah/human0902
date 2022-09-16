@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>아이디: 
+        <input id="inputId" type="text" onkeyup="checkLength(this,5)">
+    </div>
+    
+    <div>비밀번호: 
+        <input type="password" onkeyup="checkLength(this,8)">
+    </div>
+
+    <div>이름 : 
+        <input id = "inputName" type="text" maxLength="3">
+    </div>
+
+
+
+
+    <script>
+        console.log($ ("#inputName").val() );
+
+        function checkLength(inputElement, 길이){
+            if(inputElement.value.length > 길이){
+                //인풋영역의 백그라운드 색을 빨간색으로 변경
+                inputElement.style.backgroundColor = "red";
+            }else{
+                inputElement.style.backgroundColor = "";
+            }
+        }
+
+        </script>
+</body>
+</html>

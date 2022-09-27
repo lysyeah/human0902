@@ -1,0 +1,51 @@
+
+public class typeElec extends pokemon {
+
+//	int skill1Mp = 30;
+	public typeElec(String name,int maxHp,int attack, int defence, int maxMp){
+		super(name);
+		super.type = "전기";
+		
+		super.maxHp = maxHp;
+		super.presentHp = maxHp;
+		
+		super.maxMp = maxMp;
+		super.presentMp = maxMp;
+	
+		super.attack = attack;
+		
+		super.defence = defence;
+		super.presentDefence = defence;
+		
+		
+	} 
+	public int[] 전기충격(pokemon enemy){
+		/* 
+		 피카츄가 썬더을 때리는상황
+		 공격이 쌔져야 돼 
+		 상대의 현재 체력은 <나의 super.attack - 상대 enemy.defence>
+		 썬더의 현재 체력은 200
+		 200 - (나의 공격력 - 상대 방어력)
+		 썬더의 현재 체력이 180
+		 //마나 소모값 : 30// 
+		 */
+		int damage = (int) (super.attack*1.2);
+		int costMp = 30;
+		System.out.println("전기충격을 사용했다!");
+		enemy.presentHp = enemy.presentHp - (damage - enemy.defence);//200-(24-10)=186
+		super.presentMp = super.presentMp-costMp;
+		return new int[] { enemy.presentHp, super.presentMp};		
+	}
+		
+	
+	public int[] 백만볼트(pokemon enemy){
+				
+		int damage = (int) (super.attack*1.5);
+		int costMp = 50;
+		System.out.println("백만볼트 스킬을 사용했다.");
+		enemy.presentHp = enemy.presentHp - (damage - enemy.defence);
+		super.presentMp = super.presentMp-costMp;
+		return new int[] {enemy.presentHp, super.presentMp};
+	}
+		
+}

@@ -1,0 +1,41 @@
+
+public class typePlant extends pokemon{
+
+	public typePlant(String name,int maxHp,int attack, int defence, int maxMp){
+		super(name);
+		super.type = "풀";
+		
+		super.maxHp = maxHp;
+		super.presentHp = maxHp;
+		
+		super.maxMp = maxMp;
+		super.presentMp = maxMp;
+	
+		super.attack = attack;
+		
+		super.defence = defence;
+		super.presentDefence = defence;
+		
+	}
+	
+	public void 기본공격(pokemon enemy){ 
+		int damage = (int) (super.attack*1.0);
+		System.out.println("기본공격이 성공했다.");
+		enemy.presentHp = enemy.presentHp - (damage - enemy.defence);//200-(24-10)=186
+	}
+	
+	public void 스킬1(pokemon enemy){ 
+		int damage = (int) (super.attack*1.2);
+		int costMp = 30;
+		System.out.println("풀의맹세를 사용했다!");
+		enemy.presentHp = enemy.presentHp - (damage - enemy.defence);//200-(24-10)=186
+		super.presentMp = super.presentMp-costMp;
+	}
+	public void 스킬2(pokemon enemy) {
+		int damage = (int) (super.attack*1.5);
+		int costMp = 50;
+		System.out.println("강화된 풀의맹세를 사용했다!");
+		enemy.presentHp = enemy.presentHp - (damage - enemy.defence);//200-(24-10)=186
+		super.presentMp = super.presentMp-costMp;
+	}
+}

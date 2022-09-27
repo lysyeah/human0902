@@ -1,0 +1,19 @@
+
+public class typeFire extends pokemon{
+
+	public typeFire(String name, String type) {
+		super(name);
+		super.type = "불";
+		super.maxHp = maxHp;
+		super.presentHp = maxHp;
+		super.attack = attack;
+		super.defence = defence;
+    }
+	public static int fireStorm(pokemon enemy) {
+		int damage = 25;
+		System.out.println("전기 충격을 사용했다!");
+		return damage - enemy.defence; 
+	}
+
+
+}

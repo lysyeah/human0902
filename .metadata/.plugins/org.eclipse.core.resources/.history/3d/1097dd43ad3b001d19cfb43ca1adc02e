@@ -1,0 +1,34 @@
+
+public class typeWater extends pokemon{
+
+	public typeWater(String name,int maxHp,int attack, int defence, int maxMp){
+		super(name);
+		super.type = "물";
+		
+		super.maxHp = maxHp;
+		super.presentHp = maxHp;
+		
+		super.maxMp = maxMp;
+		super.presentMp = maxMp;
+	
+		super.attack = attack;
+		
+		super.defence = defence;
+		super.presentDefence = defence;
+		
+		
+	} 
+	
+	
+	public static int 물대포공격(pokemon enemy) {
+		int damage = 22;
+		System.out.println("물대포공격 스킬을 사용했다!");
+		return damage - enemy.defence; 
+	}
+	public static int 하이드로펌프(pokemon enemy) {
+		int damage = 26;
+		System.out.println("하이드로펌프 스킬을 사용했다!");
+		return damage - enemy.defence;
+	}
+	
+}

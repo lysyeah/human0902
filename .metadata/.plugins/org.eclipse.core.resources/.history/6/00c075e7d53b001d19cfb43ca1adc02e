@@ -1,0 +1,124 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		//Electric //수정 완.
+//		(이름, 체력, 공격력, 방어, 마나)
+		typeElec 피카츄 = new typeElec("피카츄", 100, 20, 5, 50);
+		typeElec 라이츄 = new typeElec("라이츄", 120, 22, 6, 60);
+		typeElec 코일 = new typeElec("코일", 115, 23, 2, 50);
+		typeElec 레어코일 = new typeElec("레어코일", 120, 26, 3, 60);
+		typeElec 찌리리공 = new typeElec("찌리리공", 100, 23, 4, 50);
+		typeElec 붐볼 = new typeElec("붐볼", 120, 25, 3, 50);
+		typeElec 에레브 = new typeElec("에레브", 130, 28, 8, 70);
+		typeElec 쥬피썬더 = new typeElec("쥬피썬더", 160, 25, 10, 70);
+		typeElec 에레키드 = new typeElec("에레키드", 115, 23, 2, 60);
+		typeElec 썬더 = new typeElec("썬더", 200, 30, 10, 80);
+
+
+
+//		스킬1의 작동이 잘 되는지 확인하기.
+		//확인1
+
+		
+		//확인2
+//		기본 공격의 작동이 잘 되는지 확인하기.
+		
+				
+		//Fire
+//		(이름, 체력, 공격력, 방어, 마나)
+		typeFire 파이리 = new typeFire("파이리",100,22,3,50);
+		typeFire 리자드 = new typeFire("리자드",120,24,4,60);
+		typeFire 리자몽 = new typeFire("리자몽",140,26,3,70);
+		typeFire 식스테일 = new typeFire("식스테일",105,23,3,50);
+		typeFire 나인테일 = new typeFire("나인테일",110,24,4,60);
+		typeFire 마그마 = new typeFire("마그마",125,25,5,60);
+		typeFire 브케인 = new typeFire("브케인",121,23,3,50);
+		typeFire 마그케인 = new typeFire("마그케인",123,24,3,60);
+		typeFire 윈디 = new typeFire("윈디",120,26,5,50);
+		typeFire 파이어 = new typeFire("파이어",200,31,10,70);
+				
+//		//Water
+		//(이름, 체력, 공격력, 방어, 마나)
+		typeWater 꼬부기= new typeWater("꼬부기",100,22,3,50);
+		typeWater 독파리= new typeWater("독파리",120,24,5,70);
+		typeWater 킹크랩= new typeWater("킹크랩",110,20,6,50);
+		typeWater 야도란= new typeWater("야도란",130,20,10,50);
+		typeWater 아쿠스타= new typeWater("아쿠스타",125,25,4,60);
+		typeWater 갸라도스= new typeWater("갸라도스",140,25,12,70);
+		typeWater 잉어킹= new typeWater("잉어킹",130,23,6,60);
+		typeWater 라프라스= new typeWater("라프라스",130,21,5,60);
+		typeWater 암스타= new typeWater("암스타",130,26,5,60);
+		typeWater 투구푸스= new typeWater("투구푸스",120,21,11,60);
+//		for (int i =1; i <= 10; i++) {
+//			피카츄.기본공격(꼬부기);  
+//			System.out.println("남은 체력 :"+꼬부기.presentHp);
+//		}
+		
+		
+		for (int i =1; i <= 2; i++) {
+			피카츄.스킬2(꼬부기);  
+			System.out.println("남은 체력 :"+꼬부기.presentHp + "\n" + "현재마나 : " + 피카츄.presentMp);
+		} //28이 떨어졌네. 
+		//"피카츄", 100, 20, 5, 50
+		//"꼬부기",100,22,3,50
+				
+		
+		//Plant
+		//(이름, 체력, 공격력, 방어, 마나)
+		typePlant 이상해씨= new typePlant("이상해씨",100,22,3,50);
+		typePlant 뚜벅초= new typePlant("뚜벅초",100,21,3,40);
+		typePlant 냄새꼬= new typePlant("냄새꼬",110,22,4,50);
+		typePlant 라플레시아= new typePlant("라플레시아",120,23,5,70);
+		typePlant 파라스= new typePlant("파라스",105,21,3,50);
+		typePlant 파라섹트= new typePlant("파라섹트",115,23,5,60);
+		typePlant 모다피= new typePlant("모다피",100,20,2,40);
+		typePlant 우츠보트= new typePlant("우츠보트",130,25,10,60);
+		typePlant 아라리= new typePlant("아라리",100,22,3,50);
+		typePlant 나시= new typePlant("나시",130,24,7,60);
+		
+//		//Soil   
+		//(이름, 체력, 공격력, 방어, 마나)
+		typeSoil 모래두지= new typeSoil("모래두지",130,20,9,40);
+		typeSoil 고지= new typeSoil("고지",140,21,10,50);
+		typeSoil 디그다= new typeSoil("디그다",110,20,3,60);
+		typeSoil 꼬마돌= new typeSoil("꼬마돌",110,21,4,40);
+		typeSoil 딱구리= new typeSoil("딱구리",120,23,7,60);
+		typeSoil 롱스톤= new typeSoil("롱스톤",140,26,4,70);
+		typeSoil 탕구리= new typeSoil("탕구리",110,20,4,50);
+		typeSoil 뿔카노= new typeSoil("뿔카노",125,23,8,60);
+		typeSoil 코뿌리= new typeSoil("코뿌리",130,25,9,60);
+		typeSoil 니드킹= new typeSoil("니드킹",130,23,7,60);
+
+		
+		//typeBossSet1
+		//(이름, 체력, 공격력, 방어)
+		bossSet1 레시라무 = new bossSet1("레시라무", 130, 20, 30, "불");
+		bossSet1 케르디오 = new bossSet1("케르디오", 130, 19, 30, "물");
+		bossSet1 제크로무 = new bossSet1("제크로무", 130, 18, 30, "전기");
+		bossSet1 악비르 = new bossSet1("악비르", 130, 17, 30, "땅");
+		
+		//typeBossSet2
+		//(이름, 체력, 공격력, 방어)
+		bossSet2 불카모스 = new bossSet2("불카모스", 130, 22, 10, "불");
+		bossSet2 맘복치 = new bossSet2("맘복치", 130, 20, 9, "물");
+		bossSet2 비리디온 = new bossSet2("비리디온", 130, 19, 9, "풀");
+		bossSet2 메더 = new bossSet2("메더", 130, 12, 9, "전기");
+		
+		
+		//typeBossSet3
+		//(이름, 체력, 공격력, 방어)
+		bossSet3 활화르바 = new bossSet3("활화르바", 130, 22,9, "불");
+		bossSet3 탱탱겔 = new bossSet3("탱탱겔", 130, 18,10, "물");
+		bossSet3 엘풍 = new bossSet3("엘풍", 130, 16,11, "풀");
+		bossSet3 하마돈 = new bossSet3("하마돈", 130, 15,12, "땅");
+	
+		
+
+		
+		
+
+
+	}
+
+}

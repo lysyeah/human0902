@@ -1,0 +1,14 @@
+package generic;
+/*
+  @author 이용수
+  @param 파라미터 없음
+ */
+public class Cat {
+	int age;
+	double height;
+	double weight;
+	
+	public void cry() {
+		System.out.println("야옹");
+	}
+}

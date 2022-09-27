@@ -1,0 +1,26 @@
+package 맵;
+import java.util.HashSet;
+public class 맵 {
+
+	public static void main(String[] args) {
+		// 문법 컬렉션 정류<데이터타입> 이름 = new 컬렑션종류<데이터타입>();
+		HashSet<String> 포유류 = new HashSet<String>();
+		포유류.add("사자");
+		포유류.add("코끼리");
+		포유류.add("고래");
+		포유류.add("고래");
+		포유류.add("원숭이");
+		포유류.add("원숭이");
+		for(String 동물 : 포유류) {
+			System.out.println(동물);
+		}
+		//원소 갯수 확인
+		System.out.println("길이 : "+ 포유류.size());
+		//포함되었는지 확인
+		System.out.println(포유류.contains("고릴라")); //고릴라가 존재하니??
+		//원소 삭제 후 원소 갯수 확인
+		System.out.println(포유류.remove("원숭이"));
+		System.out.println("길이 : "+ 포유류.size());
+	}
+
+}

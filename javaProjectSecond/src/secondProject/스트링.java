@@ -1,0 +1,25 @@
+package secondProject;
+
+public class 스트링 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String a = "대한민국";
+		String b = "미국";
+		b = a; // 값이 같아서 같은 메모리 주소를 참조
+		b = "아프리카";
+		System.out.println(a); // b를 바꾸었는데 a가 변경됨.
+		// 쌤이 그림판으로 설명한 것 참조하기.	
+		
+		
+		
+		String son = "손오공";
+		String ya = new String("손오공"); // 새로운 인스턴스
+		son = ya;
+		son = "마인부우"; //son을 바꾸어도 ya는 변경안됨.
+		System.out.println(son);
+		System.out.println(b);
+		//son을 바꿔도 ya는 그대로.
+	}
+
+}

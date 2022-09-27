@@ -1,0 +1,22 @@
+
+public class bossLv1 extends pokemon{
+	//관장의 포켓몬들.
+			//(이름, 체력, 공격력, 방어, 마나)
+//			typeFire 모래두지= new typeFire("모래두지",130,20,9,40);
+			
+			
+	public bossLv1(String name,int maxHp,int attack, int defence){
+		super(name);
+		super.type = "전기";
+		
+		super.maxHp = maxHp;
+		super.presentHp = maxHp;
+	
+		super.attack = attack;
+		
+		super.defence = defence;
+		super.presentDefence = defence;
+				
+				
+	} 
+}

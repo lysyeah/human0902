@@ -1,0 +1,10 @@
+package generic;
+
+public class 박스메이커 {
+	public static void main(String[] args) {
+		Box<String> box1 = new Box<String>();
+		box1.set("생활코딩");
+		System.out.println(box1.get());
+	}
+	
+}

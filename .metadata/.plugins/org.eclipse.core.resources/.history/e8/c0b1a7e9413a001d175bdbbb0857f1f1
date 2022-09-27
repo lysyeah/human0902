@@ -1,0 +1,28 @@
+
+public class typePlant extends pokemon{
+
+	public typePlant(String name,int maxHp,int attack, int defence) {
+		
+		super(name);
+		super.type = "풀";
+		super.maxHp = maxHp;
+		super.presentHp = maxHp;
+		super.attack = attack;
+		super.defence = defence;
+			
+	}
+	
+	public static int 나뭇잎공격(pokemon enemy) {
+		int damage = 22;
+		System.out.println("나뭇잎공격 스킬을 사용했다!");
+		return damage - enemy.defence; 
+	}
+	public static int 넝쿨채찍(pokemon enemy) {
+	
+		return damage - enemy.defence;
+	}
+	
+
+	
+
+}

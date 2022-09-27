@@ -1,0 +1,15 @@
+package 예외연습;
+
+//1. 숫자 2개를 유저로부터 입력받기.
+//2. num을 divisor로 나누기
+//3. divisor를 유저가 0으로 입력했을 경우
+			//0으로 나눌 수 없으니 다시 입력하라고 콘솔에 띄우기
+//4. 다시 입력받기.
+//5. 제대로된 결과 출력하기
+		
+import java.util.Scanner;
+
+
+public class divideByZero {
+
+}

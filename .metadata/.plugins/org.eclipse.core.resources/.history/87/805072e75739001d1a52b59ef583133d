@@ -1,0 +1,5 @@
+package 예외연습;
+
+public class divideByZero {
+
+}

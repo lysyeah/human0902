@@ -1,0 +1,19 @@
+package 자바중급1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		사육사 man = new 사욱사();
+		동물 eagle = new 독수리();
+		동물 tiger = new 호랑이();
+		동물 elephan = new 코끼리();
+		man.moveAnimal(eagle);
+		
+		애완동물 내고양이 = new 고양이();
+		man.산책시키다(내고양이);
+		
+		
+	}
+
+}

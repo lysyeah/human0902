@@ -1,0 +1,12 @@
+
+public class typePlant extends pokemon{
+
+	public typePlant(String name,int maxHp,int attack, int defence) {
+		super(name);
+		
+		// TODO Auto-generated constructor stub
+	}
+
+	
+
+}

@@ -1,0 +1,14 @@
+package 상속;
+
+public class 자동차경주장 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SuperCar 람보르기니 = new SuperCar("Lamborghini",360);
+		System.out.println(람보르기니.getMaxSpeed());
+		System.out.println(람보르기니.getPresentSpeed());
+		람보르기니.turboOn();
+		System.out.println(람보르기니.getPresentSpeed());
+	}
+
+}

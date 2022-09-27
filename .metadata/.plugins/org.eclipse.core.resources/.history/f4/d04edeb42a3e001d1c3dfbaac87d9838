@@ -1,0 +1,58 @@
+package 컬렉션프레임워크;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class 맵 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 맵은 키와 밸류의 쌍
+		Map<String, String> dict = new HashMap<String, String>();
+		dict.put("apple", "사과");
+		dict.put("banana", "바나나");
+		dict.put("peach", "복숭아");
+		dict.put("pear", "배");
+		dict.put("pineappple", "파인애플");
+//
+//		// 키를 통해서 값을 가져온다.
+//		System.out.println(dict.get("banana"));
+
+		// 반복1. foreach를 사용하여 모든 값에 함수적용
+		// -> 이렇게 하는걸 '람다식'이라고 한다. js에선 '화살표함수'.
+//		dict.forEach(
+//				(strKey,strValue)->{
+//					System.out.println(strKey + ":" + strValue);
+//				}
+//		);
+		// 반복2. Iterator 사용하여 함수적용. //이러테이러 이런게 있구나 !!
+//		Iterator<String> keys = dict.keySet().iterator();
+//		while (keys.hasNext()) {
+//			String key = keys.next();
+//			String value = dict.get(key);
+//			System.out.println(key + ":" + value);
+//		}
+		// 반복3. keySet활용. 가장 쉬워보이는 문법.
+		for (String key : dict.keySet()) {
+			System.out.println(key + ":" + dict.get(key));
+		}
+//		<퀴즈> : 한글보고 영어단어 맞추기
+//		제한시간 : 1시간
+//		구현내용 : korDict라는 <String, String>맵을 만들고
+//				랜덤으로 한글단어를 보여주고
+//				Scanner로 유저가 영어를 입력하면
+//				맞다 아니다를 보여주세요.
+		//힌트 : get함수를 써서 '키'로 '값'을 가져오는 건 쉽게 할 수 있다.
+			//반대로 '값'으로 '키'를 찾으려면 keySet()에 반복문 돌려야 한다.
+		Map<String,String>korDict = new HashMap<String,String>();
+		korDict.put( "자전거","bike" );
+		korDict.put( "자동차","car" );
+		korDict.put( "비행기","plane" );
+		korDict.put( "우주선","spaceship" );
+//		
+		System.out.println(korDict = (int) Math.random()*5);
+//		
+		
+	}
+}

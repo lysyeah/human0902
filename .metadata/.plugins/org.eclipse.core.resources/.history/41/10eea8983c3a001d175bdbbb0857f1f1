@@ -1,0 +1,4 @@
+package 이상해씨;
+public class 이상해씨 extends pokemon {
+	
+}

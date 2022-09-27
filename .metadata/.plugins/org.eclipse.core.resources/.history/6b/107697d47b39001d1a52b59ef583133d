@@ -1,0 +1,19 @@
+package 상속;
+
+public class Car {
+	String name;
+	String brand;
+	int price;
+	int maxSpeed;
+	int presentSpeed;
+	
+	public void speedUp(int howmuch) {
+		presentSpeed += howmuch;
+	}
+	public void speedDown(int howmuch){
+		presentSpeed-=howmuch;
+	}
+	public void horn() {
+		System.out.println("빠앙");
+	}
+}

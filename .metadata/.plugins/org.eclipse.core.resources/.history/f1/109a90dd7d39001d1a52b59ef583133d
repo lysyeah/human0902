@@ -1,0 +1,15 @@
+package 상속;
+
+public class SuperCar extends Car  {
+
+	public SuperCar(String name, int maxSpeed) {
+		super(name, maxSpeed);
+		// TODO Auto-generated constructor stub
+		
+	}
+	public void turnoOn() {
+		System.out.println("터보엔진 작동!!!");
+		setPresentSpeed(getPresentSpeed()+60);
+	}
+	
+}

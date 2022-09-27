@@ -1,0 +1,5 @@
+package 정적스택틱;
+
+public class Singleton {
+
+}

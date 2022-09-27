@@ -1,0 +1,9 @@
+
+public class 이상해씨 extends pokemon{
+
+	public 이상해씨(String name, String type) {
+		super(name, type);
+		
+	}
+ 
+}

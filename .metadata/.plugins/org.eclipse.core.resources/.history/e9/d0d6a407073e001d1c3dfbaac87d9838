@@ -1,0 +1,11 @@
+package generic;
+
+public class Cat {
+	int age;
+	double height;
+	double wight;
+	
+	public void cry() {
+		System.out.println("야옹");
+	}
+}

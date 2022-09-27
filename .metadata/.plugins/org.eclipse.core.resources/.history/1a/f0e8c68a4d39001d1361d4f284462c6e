@@ -1,0 +1,7 @@
+package Naver;
+
+public class Server {
+   String name = "네이버서버";
+   int maxVolume = 10000000;
+   int presentVolumn;
+}

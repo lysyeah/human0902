@@ -1,0 +1,14 @@
+package 예외2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int num = 100;
+		int divisor = 5;
+		System.out.println(num/divisor);
+		
+
+	}
+
+}

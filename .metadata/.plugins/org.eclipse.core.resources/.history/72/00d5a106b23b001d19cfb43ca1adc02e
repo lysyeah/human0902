@@ -1,0 +1,20 @@
+
+public class bossSet1 extends pokemon{
+	
+	public bossSet1(String name,int maxHp,int attack, int defence, String type){
+		super(name);
+
+		super.maxHp = maxHp;
+		super.presentHp = maxHp;
+	
+		super.attack = attack;
+		
+		super.defence = defence;
+		super.type = type;
+		
+		
+	} 
+}
+
+
+bossSet1 단단이 = new bossSet1("단단이", 100, 2,30, "전기")

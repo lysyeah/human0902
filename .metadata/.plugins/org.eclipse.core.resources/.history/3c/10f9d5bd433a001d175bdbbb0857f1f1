@@ -1,0 +1,29 @@
+
+public class typeSoil extends pokemon{
+
+	public typeSoil(String name,int maxHp,int attack, int defence) {
+		super(name);
+		super.type = "물";
+		super.maxHp = maxHp;
+		super.presentHp = maxHp;
+		super.attack = attack;
+		super.defence = defence;
+	}
+	public static int 몸통박치기(pokemon enemy) {
+		int damage = 10;
+		System.out.println("몸통박치기를 사용했다!");
+		return damage - enemy.defence;
+	}
+	
+	public static int 바위던지기(pokemon enemy) {
+		int damage = 22;
+		System.out.println("바위던지기 스킬을 사용했다!");
+		return damage - enemy.defence; 
+	}
+	public static int 하이드로펌프(pokemon enemy) {
+		int damage = 26;
+		System.out.println("하이드로펌프 스킬을 사용했다!");
+		return damage - enemy.defence;
+	}
+	
+}

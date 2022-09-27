@@ -1,0 +1,20 @@
+package 예외2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int num = 100;
+		int divisor = 0;
+		try {
+			System.out.println(num/divisor);
+		} catch (ArithmeticException e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		}
+		System.out.println("실행됨?");
+		
+
+	}
+
+}

@@ -1,0 +1,7 @@
+package facebook;
+
+public class Server {
+   String name;
+   int maxVolume;
+   int presentVolumn;
+}

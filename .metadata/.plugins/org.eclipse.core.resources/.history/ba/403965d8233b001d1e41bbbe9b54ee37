@@ -1,0 +1,18 @@
+
+public class bossLv1 extends pokemon{
+	
+	public bossLv1(String name,int maxHp,int attack, int defence, String type){
+		super(name);
+		super.type = "Poor";
+		
+		super.maxHp = maxHp;
+		super.presentHp = maxHp;
+	
+		super.attack = attack;
+		
+		super.defence = defence;
+		super.presentDefence = defence;
+				
+				
+	} 
+}

@@ -1,0 +1,5 @@
+package overridePractice;
+
+public class Child extends Parents{
+
+}

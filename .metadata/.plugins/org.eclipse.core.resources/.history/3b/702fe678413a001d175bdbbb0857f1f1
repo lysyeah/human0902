@@ -1,0 +1,9 @@
+
+public class typePlant extends pokemon{
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

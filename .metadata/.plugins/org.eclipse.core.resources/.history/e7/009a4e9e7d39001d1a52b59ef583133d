@@ -1,0 +1,10 @@
+package 상속;
+
+public class SuperCar extends Car  {
+
+	public SuperCar(String name, int maxSpeed) {
+		super(name, maxSpeed);
+		// TODO Auto-generated constructor stub
+	}
+	
+}

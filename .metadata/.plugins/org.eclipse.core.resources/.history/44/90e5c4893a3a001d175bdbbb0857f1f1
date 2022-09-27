@@ -1,0 +1,16 @@
+import java.math.BigInteger;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//이름, 속성, 체력, 공격력, 방어력
+		beginPokemon pokemon1 = new beginPokemon("파이리","불",50, 12, 3);
+		beginPokemon pokemon2 = new beginPokemon("이상해씨","불",50,12,3);
+		beginPokemon pokemon3 = new biginPokemon("꼬부기","물",50,12,3);
+		
+		
+		
+	}
+
+}

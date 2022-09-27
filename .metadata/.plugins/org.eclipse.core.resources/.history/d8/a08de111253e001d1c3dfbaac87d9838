@@ -1,0 +1,22 @@
+package 컬렉션프레임워크;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class 맵 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 맵은 키와 밸류의 쌍
+		Map<String,String> dict = new HashMap<String, String>();
+		dict.put("apple", "사과");
+		dict.put("banana", "바나나");
+		dict.put("peach", "복숭아");
+		dict.put("pear", "배");
+		dict.put("pineappple", "파인애플");
+		
+		//키를 통해서 값을 가져온다.
+		System.out.println(dict.get("banana"));
+	}
+
+}

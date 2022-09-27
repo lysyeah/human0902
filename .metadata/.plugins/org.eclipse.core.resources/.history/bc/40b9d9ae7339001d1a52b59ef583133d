@@ -1,0 +1,19 @@
+package 정적스택틱;
+
+public class Singleton {
+	private static Singleton one;
+	
+	private Singleton(){
+		//이 클래스를 벗어나는 순간 이 설계도대로 찍어낼 수가 없게 된다.
+		//이 클래스에서만 이 클래스의 인스턴스르 ㄹ만들 수 있게 된 것이다.
+	}	
+	public static Singleton getInstance() {
+		if(one == null) {
+			one = new Singleton();
+		}
+		return one;
+	}
+	
+	
+	
+}

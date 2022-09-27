@@ -1,0 +1,23 @@
+package generic;
+
+public class NumberBox <T>{
+	
+		private T t;
+
+		public T getT() {
+			return t;
+		}
+
+		public void setT(T t) {
+			this.t = t;
+		}
+		public void sum(T[] arr) {
+			double sum =0;
+			for(int i =0 ; i<arr.length; i++) {
+				sum += (double) arr[i];
+			}
+		}
+		return sum;
+		
+	}
+

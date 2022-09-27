@@ -1,0 +1,7 @@
+package overridePractice;
+
+public class Child extends Parents{
+	public void call() {
+		System.out.println("이것이 등골 브레이커다~!!!");
+	}	
+}

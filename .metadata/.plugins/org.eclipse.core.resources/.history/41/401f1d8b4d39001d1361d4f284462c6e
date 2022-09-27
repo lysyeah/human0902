@@ -1,0 +1,7 @@
+package Google;
+
+public class Server {
+   String name = "구글서버";
+   int maxVolume = 100000000; //10억
+   int presentVolumn;
+}

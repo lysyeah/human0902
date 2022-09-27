@@ -1,0 +1,11 @@
+package 자바중급1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		사육사 man = new 사욱사;
+		
+	}
+
+}

@@ -1,0 +1,22 @@
+package 컬렉션프레임워크;
+
+import java.util.ArrayList;
+
+public class 리스트 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Integer> al = new ArrayList<Integer>();
+		al.add(3);
+		al.add(4);
+		al.add(2);
+		al.add(8);
+		al.add(11);
+		al.add(9);
+		System.out.println(al);
+		
+		//n번째 인데스를 제거하기
+		al.remove(3);
+	}
+
+}

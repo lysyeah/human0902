@@ -1,0 +1,20 @@
+
+public class bossLv1 extends pokemon{
+	
+	public bossLv1(String name,int maxHp,int attack, int defence, String type){
+		super(name);
+
+		super.maxHp = maxHp;
+		super.presentHp = maxHp;
+	
+		super.attack = attack;
+		
+		super.defence = defence;
+		super.type = type;
+		
+		
+	} 
+}
+
+
+// bossLv1 단단이 = new bossLv1("단단이", 100, 2,30, "전기")

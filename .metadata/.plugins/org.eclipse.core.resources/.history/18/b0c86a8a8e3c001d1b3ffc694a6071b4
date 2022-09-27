@@ -1,0 +1,111 @@
+import java.util.ArrayList;
+
+public class 용수 {
+
+	
+	/////////////////////////////주 문 //////////////
+	///////아래 코드는 기본공격, 스킬1, 스킬2까지 완료함.//////
+	/////용수 할 일
+	/////포켓볼 4마리 미만, 5마리 이상
+	////입력값 오류일 때
+	
+	/////민경할 일
+	////전체 큰 틀인 와일문 만들기
+	////용수 코드 뒤에 따로올 내용(야생포켓몬의 공격, 나/상대 0되면 어찌되는지, 전투 종료후 모든 수치 원상복구)
+	
+	System.out.println("사용하실 스킬을 선택해 주세요.")
+	timedelay(1000);	// 밀리초 기준, 1000= 1초 쉼
+	System.out.println("| 1-기본 공격 | 2-스킬1 (마나 30 소모) | 스킬2 (마나 50 소모) | 포켓몬 볼 | 도망치기 |");
+	int atc = sc.nextInt();
+	if (atc == 1) {//기본공격
+		기본공격(enemy);
+		//기본공격 끝
+		
+	}else if(atc == 2) {//스킬 1
+		//만약 스킬1을 사용하기 위한 마나가 충분하면
+		if (this.presentMp >= 30){
+			//속성별로 아래 스킬을 사용한다.
+			switch (속성별리스트) {
+			case (pokemone.elecList):
+				스킬1(enemy);
+			case (pokemone.fireList):
+				스킬3(enemy);
+			case (pokemone.plantList):
+				스킬5(enemy);
+			case (pokemone.soilList):
+				스킬7(enemy);
+			case (pokemone.waterList):
+				스킬9(enemy);
+			}//switch문 끝
+		}else {
+			// 만약 마나가 부족해서 스킬1을 실행 못하면 기본공격을 해라.
+			기본공격(enemy);
+		}//스킬1 끝
+		
+		
+	}else if(atc == 3) {//스킬2
+		if(this.presentMp >= 50){
+			switch (속성별리스트) {
+			case (pokemone.elecList):
+				스킬2(enemy);
+			case (pokemone.fireList):
+				스킬4(enemy);
+			case (pokemone.plantList):
+				스킬6(enemy);
+			case (pokemone.soilList):
+				스킬8(enemy);
+			case (pokemone.waterList):
+				스킬10(enemy);
+			}//switch문 끝
+		}
+		else{
+			// 만약 마나가 부족해서 스킬2을 실행 못하면 기본공격을 해라.
+			기본공격(enemy);
+		}//스킬2 끝
+		
+		
+	}else if(atc == 4) {//포켓볼
+		포획률(this.maxHp, this.presentHp, pokemon enemy);	//이때 포획 성공/실패를 return함
+		
+		if (포획률(this.maxHp, this.presentHp, pokemon enemy) == true){
+		// return한 값이 true면 잡은건데...
+			
+				if(presentPokemonNumber < player.maxPokemonNumber){
+			//(현재 소유 포켓몬 갯수가 < 소유 가능한 최대 갯수)면
+				// 포켓몬을 그냥 (ArrayList<pokemon> myPokemonList)에 추가하면 된다.
+				// 코드 짜세요.
+			}
+			//(현재 소유 포켓몬 갯수가 < 소유 가능한 최대 갯수)면
+				// 포켓몬을 그냥 (ArrayList<pokemon> myPokemonList)에 추가하면 된다.
+				// 코드 짜세요.
+	
+			
+			
+			
+			
+			
+			
+			//포켓볼끝
+			
+			
+	}else if(atc == 5) {//도망가기 (확률)
+		// 도망성공 확률식
+		//'확률식' 5로 나눈 나머지가 1,2,3,4 일땐 도망 성공
+		int 확률식 = (int) Math.round((Math.random()*1000));
+		if(확률식%5 != 0){
+			//도망 성공
+			return;
+		}else{//도망 실패
+			//상대 턴의 시작코드를 여기에 복붙
+		} // 도망가기 끝
+			
+			
+	}else {//입력값 오류
+		System.out.println("입력값이 잘못되었습니다. 1 ~ 5 사이의 숫자만 입력해 주세요.");
+		System.out.println("| 1-기본 공격 | 2-스킬1 (마나 30 소모) | 스킬2 (마나 50 소모) | 포켓몬 볼 | 도망치기 |");
+		//함수
+	}
+	
+	
+	
+} // class끝

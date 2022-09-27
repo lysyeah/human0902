@@ -1,0 +1,14 @@
+package 컬렉션프레임워크;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Map {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 맵은 키와 밸류의 쌍
+		맵<String,String>dict = new HashMap<String, String>();
+	}
+
+}

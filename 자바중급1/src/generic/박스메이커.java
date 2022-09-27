@@ -1,0 +1,30 @@
+package generic;
+
+public class 박스메이커 {
+	public static void main(String[] args) {
+		Box<String> box1 = new Box<String>();
+		box1.set("생활코딩");
+		System.out.println(box1.get());
+		
+		Cat meaw = new Cat();
+		meaw.age = 2000;
+		meaw.height = 120;
+		meaw.weight= 25;
+		Box<Cat> box2 = new Box<Cat>();
+		box2.set(meaw);
+		System.out.println(box2.get());
+		
+		Box<Integer> box3 =  new Box<Integer>();
+		box3.set(3);
+		System.out.println(box3.get());
+		
+		//제네릭 문법<매개변수>
+		//매개변수는 암묵적으로 E,K, N, T, V
+		//참조형 데이터 타입'만' 들어갈 수 있다.
+		
+		NumberBox<Integer>box4 = new NumberBox<Integer>();
+		Integer[]arr = {1,2,3,4,5,6,7,8,9,10};
+		System.out.println(box4);
+	}
+	
+}

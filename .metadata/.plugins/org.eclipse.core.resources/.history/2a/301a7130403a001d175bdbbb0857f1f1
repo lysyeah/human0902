@@ -1,0 +1,12 @@
+
+public class typeFire extends pokemon{
+
+	public typeFire(String name, String type) {
+		
+		this.maxHp = (5);
+		
+		// TODO Auto-generated constructor stub
+	}
+
+
+}
